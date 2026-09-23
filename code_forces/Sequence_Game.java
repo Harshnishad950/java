@@ -27,9 +27,7 @@ public class Sequence_Game {
                 }
             }
             System.out.println(m);
-            for(int x : a){
-                System.out.print(x + " ");
-            }
+            System.out.println(m);
             System.out.println();
         }
     }
