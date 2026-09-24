@@ -35,6 +35,10 @@ public class Doremy_Paint {
             if(Math.abs(val.get(0)-val.get(1)) > 1) {
                 System.out.println("No");
             }
+            List<Integer> val = new ArrayList<>(map.values());
+            if(Math.abs(val.get(0)-val.get(1)) > 1) {
+                System.out.println("No");
+            }
             else System.out.println("Yes");
         }
     }
