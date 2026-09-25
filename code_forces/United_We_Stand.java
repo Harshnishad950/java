@@ -43,6 +43,18 @@ public class United_We_Stand {
                 System.out.print(x + " ");
             }
             System.out.println();
+            for(int x : c){
+                System.out.print(x + " ");
+            }
+            System.out.println();
+            for(int x : c){
+                System.out.print(x + " ");
+            }
+            System.out.println();
+            for(int x : c){
+                System.out.print(x + " ");
+            }
+            System.out.println();
         }
     }
     
