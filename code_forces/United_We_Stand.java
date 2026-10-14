@@ -13,48 +13,36 @@ public class United_We_Stand {
             for(int i = 0; i < n; i++){
                 a[i] = sc.nextInt();
             }
-            int q = 0;
-            for(int i = 1; i < n; i++){
-                if(a[i-1] != a[i]) q = 1;
-            }
-            if(q == 0){
-                System.out.println(-1);
-                continue;
-            }
-            int e = 0;
-            int o = 0;
+            int max =  -1;
             for(int i = 0; i < n; i++){
-                if(a[i] % 2 == 0) e = 1;
-                if(a[i] % 2 != 0) o = 1;
+                if(a[i] > max) max = a[i];
             }
-            Arrays.sort(a) 
             ArrayList<Integer> b = new ArrayList<>();
             ArrayList<Integer> c = new ArrayList<>();
-            for(int i = 0; i < n; i++){
-                if(n < n/2) b.add(a[i]);
-                if(n > n/2) c.add(a[i]);
+            
+            for(int val : a){
+                if(val % max != 0){
+                    b.add(val);
+                }
+                else{
+                    c.add(val);
+                }
             }
-            System.out.println(b.size() + " " + c.size());
-            for(int x : b){
-                System.out.print(x + " ");
+            if(b.size() == 0){
+                System.out.println(-1);
             }
-            System.out.println();
-            for(int x : c){
-                System.out.print(x + " ");
+            else{
+                System.out.println(b.size() + " " + c.size());
+                for(int val : b){
+                    System.out.print(val + " ");
+                }
+                System.out.println();
+                for(int val : c){
+                    System.out.print(val + " ");
+                }
+                System.out.println();
+                
             }
-            System.out.println();
-            for(int x : c){
-                System.out.print(x + " ");
-            }
-            System.out.println();
-            for(int x : c){
-                System.out.print(x + " ");
-            }
-            System.out.println();
-            for(int x : c){
-                System.out.print(x + " ");
-            }
-            System.out.println();
         }
     }
     
